@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Heart</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>HUNGRY HEART</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="index.html#home">home</a>
+            <a href="index.html#gallery">gallery</a>
+            <a href="menu.html">menu</a>
+            <a href="#order">order</a>
+            <a href="index.html#review">review</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- form section starts -->
+
+    <div class="wrapper">
+
+        <h1 class="heading" id="nav-space">
+            <span>Place</span> Order
+        </h1>
+
+        <form id="myform" onsubmit="return validate();" action="https://formspree.io/f/xpzeqnaw" method="post">
+
+            <div class="input_field">
+
+                <input name="Name" type="text" placeholder="Name" id="name">
+
+            </div>
+
+            <div class="input_field">
+
+                <input name="Phone no" type="text" placeholder="Phone no" id="Phoneno">
+
+            </div>
+
+            <div class="input_field">
+
+                <input name="Email" type="text" placeholder="Email" id="email">
+
+            </div>
+
+            <div class="input_field">
+
+                <input name="Pincode" type="text" placeholder="Pincode" id="pincode">
+
+            </div>
+
+            <div class="input_field">
+
+                <textarea name="Address" placeholder="Address" id="address"></textarea>
+
+            </div>
+
+            <div class="input_field">
+
+                <textarea name="Order" placeholder="Add food (example: order-id[quantity], order-id[quantity])" id="additems"></textarea>
+
+            </div>
+
+            <div class="input_field">
+
+                <textarea name="Message" placeholder="Message (any instructions)" id="message"></textarea>
+
+            </div>
+            
+            <p style="text-align: center; font-weight: 900;">You will be contacted for the confirmation</p>
+
+            <button type="submit" class="btn">
+                    Submit
+            </button>
+
+        </form>
+
+
+    </div>
+
+
+
+    <!-- form section ends -->
+
+    <!-- loader  -->
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="">
+    </div>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
